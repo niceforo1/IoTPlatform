@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/platzi/platziverse.git"
+    "url": "git+https://github.com/niceforo1/IoTPlatform.git"
   },
-  "author": "Julian Duque <julianduquej@gmail.com>",
+  "author": "gabino Santana <gabino18@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/platzi/platziverse/issues"
+    "url": "https://github.com/niceforo1/IoTPlatform/issues"
   },
-  "homepage": "https://github.com/platzi/platziverse#readme",
+  "homepage": "https://github.com/niceforo1/IoTPlatform#readme",
   "devDependencies": {
     "ava": "^0.21.0",
     "nyc": "^11.1.0",

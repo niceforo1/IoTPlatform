@@ -6,18 +6,18 @@ const chalk = require('chalk')
 const db = require('./')
 
 const prompt = inquirer.createPromptModule()
-
 async function setup () {
+  // esto hay que agregar para recibir parametros por medio de la consola
+  // const eliminar = process.argv[2].replace('--','')
   const answer = await prompt([
     {
       type: 'confirm',
       name: 'setup',
-      message: 'This will destroy your database, are you sure?'
+      message: 'Esto va a borrar su base de datos, esta seguro?'
     }
   ])
-
   if (!answer.setup) {
-    return console.log('Nothing happened :)')
+    return console.log('No pasa nada.')
   }
 
   const config = {
@@ -31,6 +31,7 @@ async function setup () {
   }
 
   await db(config).catch(handleFatalError)
+
   console.log('Success!')
   process.exit(0)
 }
